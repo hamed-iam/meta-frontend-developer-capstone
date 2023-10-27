@@ -1,15 +1,15 @@
-import Hero from "./Hero";
-import WeekSpecials from "./WeekSpecials";
-import Testimonials from "./Testimonials";
-import OurStory from "./OurStory";
+import HeroSection from "./HeroSection";
+import WeekSpecialsSection from "./WeekSpecialsSection";
+import TestimonialsSection from "./TestimonialsSection";
+import OurStorySection from "./OurStorySection";
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <WeekSpecials />
-      <Testimonials />
-      <OurStory />
+      <HeroSection />
+      <WeekSpecialsSection />
+      <TestimonialsSection />
+      <OurStorySection />
     </>
   );
 };

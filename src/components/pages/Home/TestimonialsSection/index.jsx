@@ -2,33 +2,34 @@ import customer1Image from "../assets/customer1.jpg";
 import customer2Image from "../assets/customer2.jpg";
 import customer3Image from "../assets/customer3.jpg";
 import customer4Image from "../assets/customer4.jpg";
-import "./index.css";
 import TestimonialCard from "../TestimonialCard";
+
+import "./index.css";
 
 const customers = [
   {
-    fullName: "Maria Sanchez",
+    fullName: "Name 1",
     image: customer1Image,
     rating: [1, 1, 1, 1, 0.5],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
       eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    fullName: "Antony Clifton",
+    fullName: "Name 2",
     image: customer2Image,
     rating: [1, 1, 1, 1, 1],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
       eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    fullName: "Tamika Jackson",
+    fullName: "Name 3",
     image: customer3Image,
     rating: [1, 1, 1, 1, 0.5],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
       eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    fullName: "Brandon Ming",
+    fullName: "Name 4",
     image: customer4Image,
     rating: [1, 1, 1, 1],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
@@ -40,7 +41,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
-        <h2>What people say about us!</h2>
+        <h2>What people say about us</h2>
         {customers.map((customer, index) => (
           <TestimonialCard key={index} customer={customer} />
         ))}
